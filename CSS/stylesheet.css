@@ -1,0 +1,365 @@
+@font-face {
+	font-family: "PT Serif";
+	src: url("../FONT/PT_Serif_Regular.woff") format('woff');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "PT Serif";
+	src: url("../FONT/PT_Serif_Italic.woff") format('woff');
+	font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: "PT Serif";
+	src: url("../FONT/PT_Serif_Bold_Italic.woff") format('woff');
+	font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: "PT Serif";
+	src: url("../FONT/PT_Serif_Bold.woff") format('woff');
+	font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "ProbaPro";
+	src: url("../FONT/Proba_Pro_Regular.woff") format('woff');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "ProbaPro";
+	src: url("../FONT/Proba_Pro_Italic.woff") format('woff');
+	font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: "ProbaPro";
+	src: url("../FONT/Proba_Pro_Bold_Italic.woff") format('woff');
+	font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: "ProbaPro";
+	src: url("../FONT/Proba_Pro_Bold.woff") format('woff');
+	font-weight: bold;
+    font-style: normal;
+}
+
+.center{
+	text-align: center;
+}
+
+.left:{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+
+p{
+	margin-left: 15px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+@media screen {
+	body {
+		max-width: 1024px;
+	}
+	div{
+		position:inherit !important;
+		width: inherit !important;
+		height: inherit !important;
+		top: inherit !important;
+		left: inherit !important;
+	}
+	
+	.headbig, .headbig h1, .headmedium, .headsmall, .pagehead span, .pageinfo, .pagenote, .pagenote u, .pagenote b, .pagenote i, .pagenum, sup, sup a {
+		font-family: "ProbaPro";
+		font-weight: bold;	
+	}
+
+	.headbig h1{
+		font-size: 120px;
+		line-height: 130px;
+	}
+
+	.headbig{
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	.pagehead {
+		width: 520px;
+		height: 740px;
+		display: table;
+	}
+
+	.pagehead span{
+		display: table-cell;
+		vertical-align: middle;
+		line-height: 60px;
+		font-size: 50px;
+	}
+
+	.headmedium{
+		font-size: 30px;
+	}
+
+	.headsmall{
+		font-size: 20px;
+	}
+
+	sup, sup a {
+		line-height: 3pt;
+		font-size: 2pt;
+		font-size: smaller;
+		font-weight: bold;
+		font-size: inherit;
+	}
+
+	.page{
+		position: relative !important;
+		padding: 100px;
+		padding-top: 0;
+		padding-top: 5pt;
+		padding-bottom: 5pt;
+	}
+
+	.bottom, .top, .pageinfo, #page_4, #page_6, #page_7, #page_8, #page_10, #page_17, #page_18, #page_24, #page_30, #page_37, #page_38, #page_44, #page_45, #page_46, #page_47{
+		display: none;
+	}
+
+	#page_1, #page_2, #page_3, #page_4, #page_5, #page_6, #page_7, #page_8, #page_9, #page_43 {
+		background-color: #000;
+	}
+
+	#page_10, #page_11, #page_18, #page_19, #page_24, #page_25, #page_30, #page_31, #page_38, #page_39 {
+		background-color: #F39325;
+		height: 100% !important;
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	#page_3, #page_5, #page_9, #page_43 {
+		border-top: 100px solid black;
+		border-bottom: 100px solid black;
+	}
+
+	#page_11 {
+		margin-top: 0;
+	}
+
+}
+
+@media print {
+	body{
+		margin: inherit;
+	}
+	div{
+		position:absolute !important;
+	}
+
+	.headbig, .headbig h1, .headmedium, .headsmall, .pagehead span, .pageinfo, .pagenote, .pagenote u, .pagenote b, .pagenote i, .pagenum, sup, sup a {
+		font-family: "ProbaPro";
+		font-weight: bold;	
+	}
+
+	.headbig h1{
+		font-size: 80px;
+		line-height: 80px;
+	}
+
+	.headbig{
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	.pagehead {
+		width: 520px;
+		height: 740px;
+		display: table;
+	}
+
+	.pagehead span{
+		display: table-cell;
+		vertical-align: middle;
+		line-height: 60px;
+		font-size: 50px;
+	}
+
+	.headmedium{
+		font-size: 30px;
+	}
+
+	.headsmall{
+		font-size: 20px;
+	}
+
+	.pagenum, .pageinfo{
+		z-index: 0;
+	}
+
+	.pagenote, .pagenote u, .pagenote i, .pagenote b{
+		font-size: 4.5pt;
+		line-height: 6pt !important;
+	}
+
+	.rotateright {
+		-ms-transform: rotate(90deg); /* IE 9 */
+		-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+		transform: rotate(90deg); /* Standard syntax */
+	}
+
+	.rotateleft {
+		-ms-transform: rotate(-90deg); /* IE 9 */
+		-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+		transform: rotate(-90deg); /* Standard syntax */
+	}
+
+	.page {
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		page-break-before: always;
+		font-size: 0px;
+		background-image: url("../URL/crks.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	#div1 {
+		height: 100%;
+		width: 50%;
+		left: 0;
+	}
+
+	#div2 {
+		height:
+		100%;
+		width: 50%;
+		right: 0;
+	}
+
+	ul {
+		list-style-type: disc;
+	}
+
+	li {
+		margin: 0 0 5pt 0;
+	}
+
+	.colborder {
+		height: 700px;
+		width: 0.5px;
+		left: -11px;
+		background-color: #000;
+		float: left;
+	}
+
+	.top {
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.indeximg {
+		height: 10pt;
+		width: auto;
+		line-height: 14pt;
+	}
+
+	#page_1, #page_2, #page_3, #page_4, #page_5, #page_6, #page_7, #page_8, #page_9, #page_42, #page_43, #page_44, #page_45, #page_46, #page_47 {
+		background-color: #000;
+	}
+
+	#page_10, #page_11, #page_18, #page_19, #page_24, #page_25, #page_30, #page_31, #page_38, #page_39 {
+		background-color: #F39325;
+	}
+
+	#item_260, #item_260 li, #item_260 li u, #item_260 li i {
+		font-size: 10pt;
+		line-height: 11pt;
+	}
+
+	#item_71 ol {
+		margin: 0 0 0 0;
+	}
+
+	#item_71 ol li:nth-child(3) { 
+		list-style-image: url(../IMG/TINY/ver_wave_01.png);
+	}
+
+	#item_71 ol li:nth-child(5) { 
+		list-style-image: url(../IMG/TINY/ver_wave_02.png);
+	}
+
+	#item_71 ol li:nth-child(7) { 
+		list-style-image: url(../IMG/TINY/ver_wave_03.png);
+	}
+
+	#item_71 ol li:nth-child(9) { 
+		list-style-image: url(../IMG/TINY/ver_wave_04.png);
+	}
+
+	#item_71 ol li:nth-child(11) { 
+		list-style-image: url(../IMG/TINY/ver_wave_05.png);
+	}
+
+	#item_71 ol li { 
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+
+	#border_104 { height: 723px;}/**/
+	#border_109 { height: 632px;}
+	#border_114 { height: 686px;}
+	#border_119 { height: 523px;}
+	#border_124 { height: 343px;}
+	#border_140 { height: 686px;}
+	#border_145 { height: 686px;}
+	#border_150 { height: 758px;}
+	#border_155 { height: 704px;}
+	#border_167 { height: 723px;}/**/
+	#border_172 { height: 668px;}
+	#border_177 { height: 740px;}
+	#border_194 { height: 487px;}
+	#border_199 { height: 668px;}
+	#border_204 { height: 487px;}/**/
+	#border_209 { height: 596px;}
+	#border_214 { height: 686px;}
+	#border_230 { height: 469px;}
+
+	sup, sup a {
+		line-height: 4pt;
+		vertical-align: super;
+		font-size: smaller;
+		font-weight: bold;
+		font-size: inherit;
+		color: #000;
+	}
+
+	a {
+		color: #000;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	line-height: 14pt;
+	font-size: 10pt;
+	font-family: "PT Serif";
+}
+
