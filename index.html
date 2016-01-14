@@ -21,13 +21,37 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/screen.css">
+	
 
 
     <!--if lt IE 9>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
     <!endif-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+	</script>
+	<script type="text/javascript" src="jquery.highlight.js">
+	</script>
+
+	<script type="text/javascript">
+		//<![CDATA[
+		$(function () {
+			$(".runnable")
+				.attr({ title: "Click to run this script" })
+				.css({ cursor: "pointer"})
+				.click(function () {
+					// here be eval!
+					eval($(this).text());
+				});
+
+			$('h1').highlight('highlight');
+		});
+		//]]>
+	</script>
+    
 </head>
+
+
 <body>
 <!--if lt IE 7>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -98,10 +122,10 @@
 
         </div>
 
-
-        <div class="textnotes keyterms">
-            <p>Keyterms:</p>
-
+<div id="wrapper">
+        <div id="sidebar">
+            <p><b><u>Keyterms:</u></b></p>
+			
             context<br>
             detournement<br>
             interpertatie<br>
@@ -109,6 +133,7 @@
             manipulatie<br>
             taal<br>
             semiotiek<br>
+            </i>
 
 
 
@@ -116,7 +141,7 @@
 
 
 
-        </div>
+</div>
     <div class="chapter section" id="12st" name="12st">
         <div class="chaptertitle">
                 <div class="pointleft"></div>
@@ -281,7 +306,7 @@ waarschijnlijk heel andere dingen spelen, dat zij mogelijk zo gelukkig is.</p>
 
 
 </div>
-
+</div>
 
 
 
@@ -289,11 +314,9 @@ waarschijnlijk heel andere dingen spelen, dat zij mogelijk zo gelukkig is.</p>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
-
-
-
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="js/stickyMojo.js"></script>
 </body>
 </html>
 
