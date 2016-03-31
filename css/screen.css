@@ -688,3 +688,16 @@ h1{color:#6F0}
 	text-transform: none;
 	color: #00F;
 }
+.sannekloppenburg {
+	font-family: inherit;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #000;
+}
+.brooditalic {
+	font-style: italic;
+}

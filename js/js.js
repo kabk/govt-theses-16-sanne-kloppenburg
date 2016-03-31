@@ -22,6 +22,18 @@ $(document).ready(function() {
         $("#H2-wrapper").fadeToggle();
         });
     });
+$(document).ready(function() {
+        $("#conclusie").click(function() 
+		{
+        $("#conclusie-wrapper").fadeToggle();
+        });
+    });
+$(document).ready(function() {
+        $("#abstract").click(function() 
+		{
+        $("#abstract-wrapper").fadeToggle();
+        });
+    });
 
 
 $(document).ready(function(e) {

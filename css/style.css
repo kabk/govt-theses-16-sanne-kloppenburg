@@ -151,6 +151,11 @@ a:hover, .pinkitup {
 	z-index: 11;
 }
 
+#conclusie-wrapper{
+	top: 383px;
+	left: 702px;
+	z-index: 11;
+}
 @media screen {
 	#inleiding-wrapper {
 		width: 260px;
@@ -163,6 +168,10 @@ a:hover, .pinkitup {
 	#H2-wrapper{
 		width: 230px;
 		height: 280px;
+	}
+	#conclusie-wrapper{
+	width: 230px;
+	height: 180px;
 	}
 }
 
