@@ -130,6 +130,7 @@ a:hover, .pinkitup {
 	
 }
 
+
 /********  1  *********/
 
 #inleiding-wrapper{
@@ -156,6 +157,14 @@ a:hover, .pinkitup {
 	left: 702px;
 	z-index: 11;
 }
+#abstract-wrapper{
+	width:130px;
+	height:70px;
+	top:34%;
+	left:40%;
+	z-index:12;
+	
+}
 @media screen {
 	#inleiding-wrapper {
 		width: 260px;
@@ -170,6 +179,10 @@ a:hover, .pinkitup {
 		height: 280px;
 	}
 	#conclusie-wrapper{
+	width: 230px;
+	height: 180px;
+	}
+	#abstract-wrapper{
 	width: 230px;
 	height: 180px;
 	}
