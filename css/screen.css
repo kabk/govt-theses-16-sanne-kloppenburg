@@ -558,7 +558,11 @@ a:hover {
 	color: #3F0;
 	}
 
-
+@media print {
+	#sidebar2 {
+		display: none;
+	}
+}
 	
 #wrapper {
   width: 940px; /* MUST HAVE WIDTH SET, should be the sidebar width + main width */
@@ -676,6 +680,7 @@ h1{color:#6F0}
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
+	-page-break-before: always;
 }
 
  dit is ook het menu
