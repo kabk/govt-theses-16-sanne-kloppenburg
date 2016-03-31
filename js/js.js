@@ -34,6 +34,8 @@ $(document).ready(function() {
         $("#abstract-wrapper").fadeToggle();
         });
     });
+	
+
 
 
 $(document).ready(function(e) {
