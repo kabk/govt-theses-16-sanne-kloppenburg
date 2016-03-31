@@ -1,6 +1,6 @@
-html,body,div,span,
+subchapterhtml,body,div,span,
 applet,object,iframe,h1,h2,h3,h4,h5,h6,p,
-blockquote,pre,a,abbr,acronym,address,big,
+blockquote,pre,abbr,acronym,address,big,
 cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
 small,strike,strong,sub,sup,tt,var,b,u,i,
 center,dl,dt,dd,ol,ul,li,fieldset,form,label,
@@ -26,7 +26,7 @@ html
 
 ol,ul
 {
-	list-style:none
+	list-style: circle
 }
 
 table
@@ -72,13 +72,25 @@ audio:not([controls])
 template{display:none}/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
 
 html
-{font-family:sans-serif;
+{font-family: 'Merriweather', serif;;
 	-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 
 body
 {margin:0}/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
-a{background:transparent}a:active,
-a:hover{outline:0}/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */abbr[title]{border-bottom:1px dotted}
+a{
+	background: transparent;
+	color: #C30;
+}a:active,
+a:hover{
+	outline: 0;
+	font-family: inherit;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+}/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */abbr[title]{border-bottom:1px dotted}
 b,strong{font-weight:bold}
 dfn{font-style:italic}
 h1{font-size:2em;margin:0.67em 0}
@@ -101,8 +113,7 @@ hr{-moz-box-sizing:content-box;
 pre{overflow:auto}
 code,kbd,pre,samp
 {
-	font-family:monospace, 
-	monospace;font-size:1em}/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+	font-family: 'Merriweather', serif;;font-size:1em}/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
 button,input,optgroup,select,textarea
 {	color:inherit;
 	font:inherit;
@@ -131,9 +142,13 @@ legend{border:0;padding:0}
 textarea{overflow:auto}
 optgroup{font-weight:bold}/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
 table{border-collapse:collapse;border-spacing:0}
-td,th{padding:0}@font-face
-{font-family:SuisseReg;src:url(../fonts/SuisseIntl-Regular-WebXL.eot) format("eot"),url(../fonts/SuisseIntl-Regular-WebXL.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:SuisseWorks;src:url(../fonts/SuisseWorks-Regular-WebXL.eot) format("eot"),url(../fonts/SuisseWorks-Regular-WebXL.woff) format("woff")}
-body{font-size:18px;line-height:1.6;font-family:"SuisseReg";font-weight:normal}
+td,th{padding:0}
+body{
+	font-size: 18px;
+	line-height: 1.6em;
+	font-family: 'Merriweather', serif;
+	font-weight: normal
+}
 
 .container
 {font-size:20px}
@@ -143,14 +158,14 @@ i
 {font-style:italic}
 h1
 {font-size:1.2em;
-	margin:0;font-family:"SuisseWorks"}
+	font-family: 'Merriweather', serif;}
 body
 {background-color:white;color:#222222}
 #hname
 {margin-left:27.11864%;
-	padding-top:5em;
-	font-size:1.2em;
-	font-family:"SuisseWorks";
+	padding-top:1em;
+	font-size:8.2em;
+	font-family: 'Merriweather', serif;;
 	color:black}
 #hname 
 a
@@ -160,6 +175,22 @@ a
 #hname 
 a:hover
 {color:#737373}
+
+#hname2
+{margin-left:27.11864%;
+	padding-top:5em;
+	font-size:2.2em;
+	font-family: 'Merriweather', serif;;
+	color:black}
+#hname2 
+a
+{color:black;
+	border-bottom:solid 1px black;
+	text-decoration:none}
+#hname 2
+a:hover
+{color:#737373}
+
 
 #htitle
 {width:40.67797%;
@@ -232,26 +263,93 @@ display:block;
 clear:both}
 
 .subchapterimg
-{width:23.72881%;
+{width:20%;
 	float:left;
-	margin-right:1.69492%}
+	margin-right:1.69492%;
+	margin-bottom:40px}
 
-.subchapter
-{width:49.15254%;
+.subchapter2
+{	
+	
+font-family: 'Merriweather', serif;;
+	width:49.15254%;
 	float:left;
-	margin-right:1.69492%}
-.subchapter 
-p{margin-bottom:1.5em;
-	text-align:left;
-	margin-right:1.5em}
+	margin-right:1.69492%;
+	font-color:#000}
+.subchapter2
+ul
+{
+	list-style: circle
+}
+h1
+{font-size:24px;
+color:#FC9}	
+	
+.subchapter2 
+p{
+	margin-bottom: 1.5em;
+	text-align: left;
+	margin-right: 1.5em;
+	color: #000;
+	font-family: 'Merriweather', serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 1.5em;
+	font-weight: 300;
+	font-variant: normal;
+	text-transform: none;
+}
 
-.subchapter 
+.subchapter2 
 h1{margin-top:3em;margin-bottom:1.5em;margin-right:1.5em;margin-left:2.5em}
 
-.subchapter 
-h1:first-child{margin-top:0}
+.subchapter2
+h1:first-child{
+	margin-top: 0;
+	color: #FFF;
+}
 .subchapter 
 a{text-decoration:none}
+
+.subchapter1
+{
+	
+	width: 100%;
+	float: left;
+	margin-right: 1.69492%;
+	padding-left: 20px;
+	max-width: 600px;
+	
+}
+.subchapter1
+p{
+	font-family: 'Merriweather', serif;
+	margin-bottom: 1.5em;
+	text-align: left;
+	margin-right: 1.5em;
+	color: #000;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 30px;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+}
+	
+.subchapter1 
+h1{	font-family: 'Merriweather', serif;
+margin-top:3em;margin-bottom:1.5em;margin-right:1.5em;margin-left:2.5em;color: #FF0;}
+
+.subchapter1 
+h2{	font-family: 'Merriweather', serif;
+margin-top:3em;margin-bottom:1.5em;margin-right:1.5em;margin-left:2.5em;color: #6FC;}
+
+.subchapter1
+h1:first-child{font-family: 'Merriweather', serif;
+margin-top:0;color: #FF0;}
+.subchapter 
+a{font-family: 'Merriweather', serif;
+text-decoration:none;color: #FF0;}
 
 #reference
 {-webkit-column-count:3;
@@ -268,50 +366,82 @@ a{text-decoration:none}
 	vertical-align:top;line-height:1em}
 
 .chaptertitle
-{padding-top:5em;
-	padding-bottom:5em;
-	width:100%}
+{
+	font-family: 'Merriweather', serif;
+	font-size: 24px;
+	padding-top: 4em;
+	padding-bottom: 2em;
+	width: 100%;
+	color: #FF0000;
+}
+	
 .chaptertitle h1
-{font-size:1.2em;
-	margin-left:2.5em;
-	text-transform:uppercase;
-	display:inline-block}
+{
+	font-size: 20pt;
+	margin-left: 2.5em;
+	text-transform: uppercase;
+	display: inline-block;
+	font-family: 'Merriweather', serif;
+	font-style: normal;
+	line-height: normal;
+	font-weight: 700;
+	font-variant: normal;
+	color: #000;
+}
 
 .introtitle h1
 {
-	font-size: 40pt;
+	font-size: 50pt;
 	margin-left: 2.5em;
 	text-transform: uppercase;
 	display: inline-block;
 	text-align: center;
+	color:#737373;
+
 }
 
 .introtitle h1b
 {
-	font-size: 40pt;
+	font-size: 20pt;
 	margin-left: 2.5em;
 	text-transform: uppercase;
 	display: inline-block;
 	text-align: center;
 	font-style: italic;
-}
-	
-.refnote
-{font-size:0.75em;
 	color:#737373;
+
+	
+}
+
+	
+.refnote:
+{	font-size:20px;
+	color:#966;
 	border-bottom:solid 1px}
 
 .refnote:hover
-{color:#737373}
+{
+	color: #FFF
+}
 .textnotes
 {color:#737373;
-	font-size:0.7em;
+	font-size:10px;
 	width:15.25424%;
 	float:left;
 	margin-right:1.69492%}
 
 .textnotes 
-p{margin-bottom:1em}
+p{
+	margin-bottom: 1em;
+font-family: 'Merriweather', serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 1.5em;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #666;
+}
 
 .notenumber
 {font-size:1.1em}
@@ -325,20 +455,24 @@ a{text-decoration:none;
 .textnotes 
 a:hover{color:#737373}
 .subchapterimg
-{color:black;
-	font-size:0.7em;
-	color:#737373;
-	font-size:1.2em;
-	width:23.72881%;
-	float:left;
-	margin-right:1.69492%}
+{
+	color: black;
+	font-size: 0.7em;
+	color: #737373;
+	font-size: 1.2em;
+	width: 25%;
+	float: left;
+	margin-right: 1.69492%
+}
 
 .subchapterimg 
 div
 {	padding-bottom:2em;
 	width:90%}
+
+/*! hier kan ik de with van de plaatjes aanpassen */
 .subchapterimg 
-img{width:90%}
+img{width:80%}
 
 iframe
 {position:fixed;
@@ -369,16 +503,18 @@ img
 
 
 #sidebar 
-{
+a:active{
+	font-family: 'Merriweather', serif;
+	font-size: 12px;
 	width: 170px;
-	background-color: #FFF;
+	background-color: transparent;
 	min-height: 200px;
-	float: right; /* float right for a right aligned sidebar */
+	float: left; /* float right for a right aligned sidebar */
 	position: fixed;
-	margin-top: 10px;
+	margin-top: 500px;
 	margin-right: 0;
 	margin-bottom: 15px;
-	margin-left: 0;
+	margin-left: 20;
 	padding-top: 15px;
 	padding-right: 0px;
 	padding-bottom: 15px;
@@ -386,8 +522,169 @@ img
 	font-style: normal;
 	color: #999;
 }
+
+#sidebar2 
+{
+	font-size: 17px;
+	width: 250px;
+	background-color: transparent;
+	min-height: 200px;
+	float: left; /* float right for a right aligned sidebar */
+	position: fixed;
+	font-style: normal;
+}
+#sidebar2
+a {
+	font-size:18px;
+	font-style:underline;
+	color: #000;
+	
+	}
+#sidebar2
+a:hover {
+	font-size: 18px;
+	color: #3F0;
+	}
+
+
+	
 #wrapper {
   width: 940px; /* MUST HAVE WIDTH SET, should be the sidebar width + main width */
   margin-left: auto;
   margin-right: auto;
+}
+.onderschrift {
+	font-size: 11px;
+	font-family: 'Merriweather', serif;
+	font-style: normal;
+	line-height: 1.5em;
+	font-weight: normal;
+	font-variant: normal;
+	  top: -2px;
+	text-transform: none;
+	vertical-align: sub;	
+}
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	border: 16px solid orange;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}
+
+#inhoudsopgave {
+	vertical-align:central;
+	font-size:18px;
+	font-style:oblique;
+}
+.referentie {
+font-family: 'Merriweather', serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #90F;
+	vertical-align: top;
+}
+#page-wrapper #H1-wrapper #contents #2st .subchapter2 p .referentie {
+font-family: 'Merriweather', serif;
+	font-size: 9px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #C9F;
+}
+#page-wrapper #H1-wrapper #contents #2st .subchapter2 p referentie {
+font-family: 'Merriweather', serif;
+	font-size: 9px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #F0F;
+}
+.referentie {
+	color: #039;
+}
+.kopjebrood {
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 1.7em;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #000;
+	padding-left: 30px;
+}
+.kopjebrood
+h1{color:#6F0}
+
+.referentie2 {
+	color: #F0F;
+}
+.onderschrift2 {
+	font-family: inherit;
+	font-size: 10px;
+	font-style: italic;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	margin: 20px;
+	padding-top: 20px;
+	vertical-align: bottom;
+}
+.kopjebrood3 {
+	font-family: inherit;
+	font-size: 24px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #F66;
+}
+.Kop {
+	font-family: inherit;
+	font-size: 180px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+
+ dit is ook het menu
+#page-wrapper #sidebar2 {
+	font-family: inherit;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #C00;
+}
+
+.menu2 {
+	font-family: inherit;
+	font-size: 9px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #00F;
 }
